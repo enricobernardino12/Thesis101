@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="ktrbh.css">
+    <meta charset="utf-8">
+    <title>ADMIN ADD EMPLOYEES PAGE</title>
+
+    <script>
+    function myFunction() {
+        var pass1 = document.getElementById("pass1").value;
+        var pass2 = document.getElementById("pass2").value;
+        var ok = true;
+        if (pass1 != pass2) {
+            document.getElementById("pass1").style.borderColor = "#E34234";
+            document.getElementById("pass2").style.borderColor = "#E34234";
+            alert("<tt>Passwords Don't Match!!!</tt>");
+            ok = false;
+        }
+        return ok;
+    }
+
+    </script>
+  </head>
+
+<body>
+<!-- <div class="top"> -->
+  <form method="post" action="addEmp.php" class="add">
+      <br><br>
+      <h3>ADD EMPLOYEE/S DETAILS BELOW </h3>
+        <h4></h4>
+        <input type="number" name="id" placeholder="EMPLOYEE ID"/required>
+        <br>
+
+        <input type="text" name="firstname" placeholder="FIRST NAME"/required>
+        <br>
+        <input type="text" name="lastname" placeholder="LAST NAME"/required>
+        <br>
+        <input type="text" name="username" placeholder="ENTER USERNAME"/required>
+        <br>
+
+        <input type="password" name="password" id="pass1" placeholder="ENTER PASSWORD"/required>
+        <br>
+        <input type="password" name="retypepassword" id="pass2" placeholder="RETYPE PASSWORD"/required>
+        <br>
+
+        <input type="text" name="gender" placeholder="ENTER GENDER"/required>
+        <br>
+
+        <input type="text" name="birthdate" placeholder="BIRTH DATE"/required>
+        <br>
+        <input type="text" name="department" placeholder="DEPARTMENT"/required>
+        <br>
+        <input type="number" name="sssnumber" placeholder="SSS NUMBER"/required>
+        <br>
+        <input type="number" name="yremployed" placeholder="YEAR EMPLOYED"/required>
+        <br>
+        <input type="text" name="position" placeholder="POSITION"/required>
+        <br>
+        <input type="number" name="salary" placeholder="SALARY"/required>
+        <br>
+        <input type="number" name="leaves" placeholder="LEAVES"/required>
+        <br>
+
+        <h4></h4><center>
+        <input type="submit" name="submit" value="SUBMIT"/required>
+        &nbsp;&nbsp;&nbsp;
+        <input type="reset" value="CLEAR">
+        <br><br>
+          <a href="homeAdmin.php"><small>RETURN</small></a>
+          <br></center>
+    </form>
+  </div>
+</body>
+</html>
