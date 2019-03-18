@@ -1,2 +1,2 @@
-# erica-bernadette
+# sample
 Thesis
